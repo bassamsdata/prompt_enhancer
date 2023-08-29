@@ -14,7 +14,7 @@ initial_prompt = st.text_area(label="Prompt Input", label_visibility='collapsed'
 if initial_prompt:
     # Initialize LLM
     openai_api_key = os.getenv('OPENAI_API_KEY')
-    llm = ChatOpenAI(openai_api_key=openai_api_key, model="gpt-3.5-turbo-16k", temperature=0.4)
+    llm = ChatOpenAI(openai_api_key=openai_api_key, model="gpt-3.5-turbo-16k", temperature=0)
 
     # Initialize LLMChain
     prompt_improver_chain = LLMChain(llm=llm, prompt=PROMPT_IMPROVER_PROMPT)
