@@ -4,7 +4,6 @@ import streamlit as st
 from prompts import PROMPT_IMPROVER_PROMPT
 import os
 
-
 with st.container():
     st.markdown("""
                 ## Enter initial prompt here:
